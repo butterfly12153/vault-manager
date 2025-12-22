@@ -3,3 +3,63 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #171717;
+  color: white;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* ----------Header Section----------- */
+header {
+  padding-block: 30px;
+  border-bottom: 1px solid #252525;
+}
+
+header .content {
+  max-width: 50%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content p:first-child {
+  color: #298dff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 550;
+}
+
+header .content .middle {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+header .content .middle .block {
+  border: 1px solid #252525;
+  border-radius: 1rem;
+  padding: 6px 15px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .content .middle .circle {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-color: rgb(2, 255, 133);
+  border-radius: 50%;
+}
+
+.content p:last-child {
+  color: rgb(167, 167, 167);
+  font-size: 14px;
+}
+
+/* ---------New bookmark Section------------ */
