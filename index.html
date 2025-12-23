@@ -3,10 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
+    <!-- header -->
     <header>
       <div class="content">
         <p>vault overview</p>
@@ -23,5 +28,108 @@
         </p>
       </div>
     </header>
+
+    <!-- section -->
+    <section>
+      <div class="abm">
+        <div class="part1">
+          <p class="one">New bookmark</p>
+          <h2>Store website credentials safely</h2>
+          <p class="two">
+            Fill the details below. Your brand color helps us render a matching
+            favicon.
+          </p>
+        </div>
+
+        <!-- form -->
+        <form>
+          <div class="part2">
+            <!-- Website URL Input -->
+            <label class="url shadow">
+              <span> Website URL </span>
+              <input type="url" placeholder="https://example.com" />
+              <span>Include https:// for best results.</span>
+            </label>
+
+            <!-- Color Picker -->
+            <label class="color shadow">
+              <div class="flex">
+                <div class="p1">
+                  <p>Favicon color</p>
+                  <p>Select the accent color we should render.</p>
+                </div>
+                <input type="color" value="#3b82f6" />
+              </div>
+              <div class="p2">
+                <span> Hex </span>
+                <span>Matches any brand primary color.</span>
+              </div>
+            </label>
+
+            <!-- Category Select -->
+            <label class="category shadow">
+              <span> Category </span>
+              <select>
+                <option>Select category</option>
+                <option>Social</option>
+                <option>Video</option>
+                <option>Design</option>
+                <option>Streaming</option>
+                <option>Productivity</option>
+                <option>Entertainment</option>
+                <option>Shopping</option>
+                <option>Music</option>
+              </select>
+              <span> Helps you filter quicker later. </span>
+            </label>
+          </div>
+
+          <!-- Username Input -->
+          <div class="part3">
+            <label class="username shadow">
+              <span> Username </span>
+              <input type="text" placeholder="Enter username" />
+              <span>Use workspace or personal handle.</span>
+            </label>
+
+            <!-- Password Input -->
+            <label class="password shadow">
+              <span> Password </span>
+              <input type="text" placeholder="Enter password" />
+              <span>Choose at least 6 characters.</span>
+            </label>
+          </div>
+
+          <!-- button -->
+          <div class="part4">
+            <div>
+              <span>By submitting you confirm the entry is safe to store.</span>
+            </div>
+            <div class="button">
+              <button class="shadow">Clear</button>
+              <button class="shadow">Add Bookmark</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+      <div class="main">
+        <div class="search">
+          <span><i class="bx bx-search"></i> </span>
+          <input type="search" placeholder="Search saved credentials" />
+        </div>
+        <div class="sort-by">
+          <span><i class="bx bx-filter"></i></span>
+          <select>
+            <option>Sort By</option>
+            <option value="ascending">Ascending</option>
+            <option value="descending">Descending</option>
+          </select>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
